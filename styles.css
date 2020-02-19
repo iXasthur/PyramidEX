@@ -38,7 +38,7 @@ body{
 .i-features{
     margin: auto;
     width: 50%;
-    height: 500px;
+    height: auto;
     text-align: left;
     font-size: 20px;
 }
@@ -48,8 +48,9 @@ body{
 
 .i-markets{
     margin: auto;
+    padding-top: 100px;
     width: 50%;
-    height: 1000px;
+    height: auto;
     text-align: left;
     font-size: 25px;
 }
@@ -66,5 +67,14 @@ body{
     grid-template-columns: 50px 100px minmax(30%,auto) 20% 20%;
     grid-template-rows: 50px;
     text-align: center;
+    font-size: 25px;
+}
+
+.i-partners{
+    margin: auto;
+    padding-top: 100px;
+    width: 50%;
+    height: 300px;
+    text-align: left;
     font-size: 25px;
 }
