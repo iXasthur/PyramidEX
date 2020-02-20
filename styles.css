@@ -8,7 +8,7 @@
         font-family: Baloo;
         background: linear-gradient(to left, #8942a8, #ba382f);
         color: white;
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .i-header{
@@ -35,15 +35,15 @@
 
     .i-markets-coin-grid{
         display: grid;
-        grid-template-columns: 40px 70px 0 20% 20%;
+        grid-template-columns: 50px 1fr 0 1fr 1fr;
         grid-template-rows: 50px;
         grid-column-gap: 15px;
         text-align: center;
         align-items: center;
+        justify-items: stretch;
     }
-    .cryptopic{
-        width: 40px;
-        height: 40px;
+    .sname{
+        text-align: left;
     }
     .fname{
         visibility: hidden;
@@ -87,15 +87,11 @@
 
     .i-markets-coin-grid{
         display: grid;
-        grid-template-columns: 50px 100px minmax(30%,auto) 20% 20%;
+        grid-template-columns: 50px 1fr 2fr 1fr 1fr;
         grid-template-rows: 50px;
         grid-column-gap: 5px;
         text-align: center;
         align-items: center;
-    }
-    .cryptopic{
-        width: 50px;
-        height: 50px;
     }
     .fname{
         text-align: left;
@@ -112,17 +108,22 @@
 }
 
 .i-markets{
-    margin: auto;
+    display: grid;
+    grid-auto-rows: minmax(50px,auto);
+    justify-content: center;
     padding-top: 100px;
-    width: 50%;
-    height: auto;
+    padding-right: 40px;
+    padding-left: 40px;
     text-align: left;
 }
-
 .i-markets-grid{
     display: grid;
     grid-auto-rows: 50px;
-    grid-gap: 15px;
+    grid-row-gap: 15px;
+}
+.cryptopic{
+    width: 50px;
+    height: 50px;
 }
 
 .i-partners{
