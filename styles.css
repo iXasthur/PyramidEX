@@ -2,13 +2,15 @@
     margin: 0;
     padding: 0;
 }
-body{
-    font-family: Baloo;
-    background: linear-gradient(to left, #8942a8, #ba382f);
-    color: white;
-}
 
 @media screen and (max-width: 600px) {
+    body{
+        font-family: Baloo;
+        background: linear-gradient(to left, #8942a8, #ba382f);
+        color: white;
+        font-size: 20px;
+    }
+
     .i-header{
         display: grid;
         grid-auto-rows: auto;
@@ -28,11 +30,34 @@ body{
     }
     .i-header h1{
         text-align: center;
-        font-size: 45px;
+        font-size: 40px;
+    }
+
+    .i-markets-coin-grid{
+        display: grid;
+        grid-template-columns: 40px 70px 0 20% 20%;
+        grid-template-rows: 50px;
+        grid-column-gap: 15px;
+        text-align: center;
+        align-items: center;
+    }
+    .cryptopic{
+        width: 40px;
+        height: 40px;
+    }
+    .fname{
+        visibility: hidden;
     }
 }
 
 @media screen and (min-width: 600px) {
+    body{
+        font-family: Baloo;
+        background: linear-gradient(to left, #8942a8, #ba382f);
+        color: white;
+        font-size: 25px;
+    }
+
     .i-header {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
@@ -51,7 +76,6 @@ body{
         justify-content: end;
         align-items: center;
         text-align: center;
-        font-size: 25px;
         background: #1b1b1b;
     }
 
@@ -59,7 +83,23 @@ body{
         justify-self: start;
         padding-left: 25px;
         text-align: center;
-        font-size: 45px;
+    }
+
+    .i-markets-coin-grid{
+        display: grid;
+        grid-template-columns: 50px 100px minmax(30%,auto) 20% 20%;
+        grid-template-rows: 50px;
+        grid-column-gap: 5px;
+        text-align: center;
+        align-items: center;
+    }
+    .cryptopic{
+        width: 50px;
+        height: 50px;
+    }
+    .fname{
+        text-align: left;
+        visibility: visible;
     }
 }
 
@@ -69,7 +109,6 @@ body{
     width: 50%;
     height: auto;
     text-align: left;
-    font-size: 25px;
 }
 
 .i-markets{
@@ -78,7 +117,6 @@ body{
     width: 50%;
     height: auto;
     text-align: left;
-    font-size: 25px;
 }
 
 .i-markets-grid{
@@ -87,20 +125,10 @@ body{
     grid-gap: 15px;
 }
 
-.i-markets-coin-grid{
-    display: grid;
-    grid-template-columns: 50px 100px minmax(30%,auto) 20% 20%;
-    grid-template-rows: 50px;
-    text-align: center;
-    align-items: center;
-    font-size: 25px;
-}
-
 .i-partners{
     margin: auto;
     padding-top: 100px;
     width: 50%;
     height: 300px;
     text-align: left;
-    font-size: 25px;
 }
