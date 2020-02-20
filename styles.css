@@ -10,7 +10,8 @@ body{
 
 .i-header{
     display: grid;
-    grid-template-columns: 270px auto;
+    grid-template-columns: repeat(auto-fit,minmax(370px,1fr));
+    justify-content: end;
     width: 100%;
     height: auto;
     background: #1b1b1b;
@@ -19,7 +20,8 @@ body{
 .i-header-grid{
     display: grid;
     padding-right: 15px;
-    grid-template-columns: repeat(auto-fit,150px);
+    grid-template-columns: repeat(4,auto);
+    grid-column-gap: 25px;
     justify-content: end;
     align-items: center;
     text-align: center;
@@ -27,8 +29,9 @@ body{
     background: #1b1b1b;
 }
 .i-header h1{
+    justify-self: start;
     padding-left: 25px;
-    text-align: left;
+    text-align: center;
     font-size: 45px;
 }
 
