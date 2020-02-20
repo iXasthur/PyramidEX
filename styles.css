@@ -3,133 +3,111 @@
     padding: 0;
 }
 
+body {
+    font-family: Baloo;
+    background: linear-gradient(to left, #8942a8, #ba382f);
+    color: white;
+}
+
 @media screen and (max-width: 600px) {
     body{
-        font-family: Baloo;
-        background: linear-gradient(to left, #8942a8, #ba382f);
-        color: white;
         font-size: 25px;
     }
 
     .i-header{
-        display: grid;
-        grid-auto-rows: auto;
-        width: 100%;
-        height: auto;
-        background: #1b1b1b;
-        align-items: center;
-    }
-    .i-header-grid{
-        display: grid;
-        grid-auto-rows: auto;
+        grid-auto-flow: row;
         justify-content: center;
-        align-items: center;
-        text-align: center;
-        font-size: 25px;
-        background: #1b1b1b;
-    }
-    .i-header h1{
-        text-align: center;
-        font-size: 40px;
     }
 
     .i-markets-coin-grid{
-        display: grid;
-        grid-template-columns: 50px 1fr 0 1fr 1fr;
-        grid-template-rows: 50px;
-        grid-column-gap: 15px;
-        text-align: center;
-        align-items: center;
-        justify-items: stretch;
-    }
-    .sname{
-        text-align: left;
+        grid-template-columns: 50px minmax(20px,1fr) 0 2fr 2fr;
     }
     .fname{
         visibility: hidden;
     }
-}
 
+}
 @media screen and (min-width: 600px) {
     body{
-        font-family: Baloo;
-        background: linear-gradient(to left, #8942a8, #ba382f);
-        color: white;
         font-size: 25px;
     }
 
     .i-header {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
         justify-content: end;
-        width: 100%;
-        height: auto;
-        background: #1b1b1b;
-        align-items: center;
     }
-
     .i-header-grid {
         display: grid;
-        padding-right: 15px;
         grid-template-columns: repeat(4, auto);
         grid-column-gap: 25px;
         justify-content: end;
-        align-items: center;
-        text-align: center;
+        padding-right: 15px;
         background: #1b1b1b;
     }
-
     .i-header h1 {
         justify-self: start;
         padding-left: 25px;
-        text-align: center;
     }
 
     .i-markets-coin-grid{
-        display: grid;
         grid-template-columns: 50px 1fr 2fr 1fr 1fr;
-        grid-template-rows: 50px;
-        grid-column-gap: 5px;
-        text-align: center;
-        align-items: center;
     }
     .fname{
         text-align: left;
         visibility: visible;
     }
+
+}
+
+.i-header {
+    display: grid;
+    text-align: center;
+    align-items: center;
+    background: #1b1b1b;
+}
+
+.i-markets-coin-grid{
+    display: grid;
+    grid-template-rows: 50px;
+    grid-column-gap: 20px;
+    text-align: center;
+    align-items: center;
+}
+.i-markets-coin-grid img{
+    width: 50px;
+    height: 50px;
+}
+
+.i-main-wrapper{
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: center;
+    padding-right: 40px;
+    padding-left: 40px;
 }
 
 .i-features{
-    margin: auto;
     padding-top: 70px;
-    width: 50%;
-    height: auto;
     text-align: left;
 }
 
 .i-markets{
     display: grid;
-    grid-auto-rows: minmax(50px,auto);
-    justify-content: center;
-    padding-top: 100px;
-    padding-right: 40px;
-    padding-left: 40px;
+    grid-auto-flow: row;
     text-align: left;
+    padding-top: 100px;
 }
 .i-markets-grid{
     display: grid;
     grid-auto-rows: 50px;
     grid-row-gap: 15px;
 }
-.cryptopic{
-    width: 50px;
-    height: 50px;
-}
 
 .i-partners{
-    margin: auto;
     padding-top: 100px;
-    width: 50%;
-    height: 300px;
     text-align: left;
 }
+
+
+
+
