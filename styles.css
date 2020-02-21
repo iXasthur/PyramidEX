@@ -46,7 +46,7 @@ body {
         grid-template-columns: repeat(4, auto);
         grid-column-gap: 25px;
         justify-content: end;
-        padding-right: 15px;
+        padding-right: 25px;
         background: #1b1b1b;
     }
     .i-header h1 {
@@ -122,6 +122,13 @@ body {
     justify-content: center;
     text-align: center;
     align-items: center;
+}
+
+.i-footer{
+    text-align: right;
+    margin-top: 10px;
+    padding-right: 25px;
+    background: linear-gradient(to right, #1b1b1b00, #1b1b1b);
 }
 
 
