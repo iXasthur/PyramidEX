@@ -75,16 +75,23 @@ body {
     align-items: center;
     background: #1b1b1b;
 }
-.i-header-grid div{
+.i-header h1 a{
+    color: white;
+    text-decoration: none;
+    transition-duration: 0.07s;
+}
+.i-header h1 a:hover{
+    color: gold;
+}
+.i-header-grid a{
+    display: block;
+    color: white;
+    text-decoration: none;
     padding: 5px;
     transition-duration: 0.07s;
 }
-.i-header-grid div:hover{
-    background: #4CAF50;
-}
-.i-header-grid div a{
-    color: white;
-    text-decoration: none;
+.i-header-grid a:hover{
+    color: chartreuse;
 }
 
 .i-login-menu{
@@ -92,16 +99,17 @@ body {
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     grid-column-gap: 20px;
 }
-.i-login-menu div {
-    padding: 20px;
-    transition-duration: 0.07s;
-    background: #1b1b1b66;
+.i-login-menu a span {
+    display: block;
 }
-.i-login-menu div a{
+.i-login-menu a{
     color: white;
     text-decoration: none;
+    background: #1b1b1b66;
+    padding: 20px;
+    transition-duration: 0.07s;
 }
-.i-login-menu div:hover{
+.i-login-menu a:hover{
     background: #4CAF50;
 }
 
