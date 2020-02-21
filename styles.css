@@ -38,7 +38,7 @@ body {
     }
 
     .i-header {
-        grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
         justify-content: end;
     }
     .i-header-grid {
@@ -74,6 +74,17 @@ body {
     text-align: center;
     align-items: center;
     background: #1b1b1b;
+}
+.i-header-grid div{
+    padding: 5px;
+    transition-duration: 0.07s;
+}
+.i-header-grid div:hover{
+    background: #4CAF50;
+}
+.i-header-grid div a{
+    color: white;
+    text-decoration: none;
 }
 
 .i-markets-coin-grid{
