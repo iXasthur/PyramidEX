@@ -196,7 +196,7 @@ body {
     outline: none;
     color: white;
 }
-.li-form input[type = "text"],.li-form input[type = "password"]{
+.li-form input[type = "text"],.li-form input[type = "email"],.li-form input[type = "password"]{
     border: 2px solid #1b1b1bcc;
 }
 .li-form input[type = "submit"]{
