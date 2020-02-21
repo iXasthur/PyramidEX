@@ -222,6 +222,16 @@ body {
 /*---------------WALLET---------------*/
 /*---------------PROFILE---------------*/
 /*---------------CONTACTS---------------*/
+.c-main-wrapper{
+    display: grid;
+    grid-auto-columns: auto;
+    justify-items: center;
+    align-items: center;
+}
+.c-contacts{
+    text-align: center;
+    padding: 10%;
+}
 
 
 
