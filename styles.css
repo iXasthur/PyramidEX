@@ -109,6 +109,8 @@ body {
     background: #1b1b1b66;
     padding: 20px;
     transition-duration: 0.07s;
+    border: 2px solid #1b1b1b66;
+    border-radius: 30px;
 }
 .i-login-menu a:hover{
     background: #4CAF50;
@@ -200,12 +202,16 @@ body {
     border: 2px solid #1b1b1bcc;
 }
 .li-form input[type = "submit"]{
-    border: 2px solid gold;
+    /*border: 2px solid gold;*/
+    border: 2px solid #1b1b1b66;
+    background-color: #1b1b1b66;
     margin-left: 50px;
     margin-right: 50px;
+    transition-duration: 0.07s;
 }
 .li-form input[type = "submit"]:hover{
-    background-color: #1b1b1b88;
+    border: 2px solid #1b1b1b66;
+    background-color: #4CAF50;
 }
 
 .su-form{
