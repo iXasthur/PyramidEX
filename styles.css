@@ -99,6 +99,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     grid-column-gap: 20px;
+    grid-row-gap: 15px;
 }
 .i-login-menu a span {
     display: block;
