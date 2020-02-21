@@ -23,7 +23,7 @@ body {
     .i-markets-coin-grid{
         grid-template-columns: 50px minmax(20px,1fr) 0 2fr 2fr;
     }
-    .fname{
+    .uni-coin-fname{
         visibility: hidden;
     }
 
@@ -32,6 +32,9 @@ body {
         grid-auto-rows: 80px;
     }
 
+    .w-coin-grid{
+        grid-template-columns: 50px minmax(20px,1fr) 0 2fr 2fr;
+    }
 }
 @media screen and (min-width: 600px) {
     body{
@@ -58,7 +61,7 @@ body {
     .i-markets-coin-grid{
         grid-template-columns: 50px 1fr 2fr 1fr 1fr;
     }
-    .fname{
+    .uni-coin-fname{
         text-align: left;
         visibility: visible;
     }
@@ -68,6 +71,9 @@ body {
         grid-auto-rows: 100px;
     }
 
+    .w-coin-grid{
+        grid-template-columns: 50px 1fr 2fr 1fr 1fr;
+    }
 }
 
 .i-header{
@@ -95,6 +101,18 @@ body {
     color: chartreuse;
 }
 
+.i-main-wrapper{
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: center;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.i-features{
+    padding-top: 70px;
+    text-align: left;
+}
 .i-login-menu{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
@@ -117,31 +135,6 @@ body {
     background: #4CAF50;
 }
 
-.i-markets-coin-grid{
-    display: grid;
-    grid-template-rows: 50px;
-    grid-column-gap: 20px;
-    text-align: center;
-    align-items: center;
-}
-.i-markets-coin-grid img{
-    width: 50px;
-    height: 50px;
-}
-
-.i-main-wrapper{
-    display: grid;
-    grid-auto-flow: row;
-    justify-content: center;
-    padding-right: 40px;
-    padding-left: 40px;
-}
-
-.i-features{
-    padding-top: 70px;
-    text-align: left;
-}
-
 .i-markets{
     display: grid;
     grid-auto-flow: row;
@@ -152,6 +145,17 @@ body {
     display: grid;
     grid-auto-rows: 50px;
     grid-row-gap: 15px;
+}
+.i-markets-coin-grid{
+    display: grid;
+    grid-template-rows: 50px;
+    grid-column-gap: 20px;
+    text-align: center;
+    align-items: center;
+}
+.i-markets-coin-grid img{
+    width: 50px;
+    height: 50px;
 }
 
 .i-partners{
@@ -219,8 +223,59 @@ body {
     padding: 5%;
 }
 /*---------------TRADING---------------*/
+.t-main-wrapper{
+    display: grid;
+    grid-auto-columns: auto;
+    justify-items: center;
+    align-items: center;
+}
+.t-soon{
+    text-align: center;
+    padding: 10%;
+}
 /*---------------WALLET---------------*/
+.w-main-wrapper{
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: center;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 10%;
+}
+.w-info{
+    padding-top: 10%;
+}
+.w-balance-grid{
+    display: grid;
+    grid-auto-flow: row;
+    grid-row-gap: 15px;
+    text-align: left;
+    padding-top: 50px;
+}
+.w-coin-grid{
+    display: grid;
+    grid-template-rows: 50px;
+    grid-column-gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+.w-coin-grid img{
+    width: 50px;
+    height: 50px;
+}
 /*---------------PROFILE---------------*/
+.p-main-wrapper{
+    display: grid;
+    grid-auto-columns: auto;
+    justify-items: start;
+    align-items: center;
+    padding-left: 20%;
+    padding-bottom: 5%;
+}
+.p-info{
+    padding-top: 5%;
+    text-align: left;
+}
 /*---------------CONTACTS---------------*/
 .c-main-wrapper{
     display: grid;
