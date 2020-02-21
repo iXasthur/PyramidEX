@@ -267,13 +267,12 @@ body {
 .p-main-wrapper{
     display: grid;
     grid-auto-columns: auto;
+    grid-row-gap: 50px;
     justify-items: start;
     align-items: center;
-    padding-left: 20%;
-    padding-bottom: 5%;
+    padding: 5% 20%;
 }
 .p-info{
-    padding-top: 5%;
     text-align: left;
 }
 /*---------------CONTACTS---------------*/
