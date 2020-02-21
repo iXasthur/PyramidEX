@@ -279,13 +279,12 @@ body {
 /*---------------CONTACTS---------------*/
 .c-main-wrapper{
     display: grid;
-    grid-auto-columns: auto;
-    justify-items: center;
-    align-items: center;
+    grid-auto-flow: row;
+    justify-content: center;
+    padding: 10%;
 }
 .c-contacts{
     text-align: center;
-    padding: 10%;
 }
 
 
