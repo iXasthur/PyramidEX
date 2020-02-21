@@ -26,6 +26,10 @@ body {
         visibility: hidden;
     }
 
+    .i-partners-grid{
+        grid-auto-flow: row;
+    }
+
 }
 @media screen and (min-width: 600px) {
     body{
@@ -55,6 +59,10 @@ body {
     .fname{
         text-align: left;
         visibility: visible;
+    }
+
+    .i-partners-grid{
+        grid-template-columns: repeat(3,1fr);
     }
 
 }
@@ -106,6 +114,11 @@ body {
 .i-partners{
     padding-top: 100px;
     text-align: left;
+}
+.i-partners-grid{
+    display: grid;
+    justify-content: center;
+    text-align: center;
 }
 
 
