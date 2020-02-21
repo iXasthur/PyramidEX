@@ -182,12 +182,12 @@ body {
     grid-auto-columns: auto;
     justify-items: center;
     align-items: center;
+    padding: 10% 10px;
 }
 .li-form{
     display: grid;
     grid-auto-columns: minmax(270px, auto);
     grid-row-gap: 20px;
-    padding: 10%;
     text-align: center;
 }
 .li-form input::placeholder{
@@ -217,10 +217,6 @@ body {
 .li-form input[type = "submit"]:hover{
     border: 2px solid #1b1b1b66;
     background: #4CAF50;
-}
-
-.su-form{
-    padding: 5%;
 }
 /*---------------TRADING---------------*/
 .t-main-wrapper{
