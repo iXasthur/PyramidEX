@@ -9,6 +9,7 @@ body {
     color: white;
 }
 
+/*---------------INDEX+HEADER+FOOTER---------------*/
 @media screen and (max-width: 600px) {
     body{
         font-size: 25px;
@@ -166,7 +167,54 @@ body {
     margin-top: 10px;
     padding-right: 25px;
     background: linear-gradient(to right, #1b1b1b00, #1b1b1b);
+    font-size: 20px;
 }
+/*---------------LOGIN+SIGNUP---------------*/
+.li-main-wrapper{
+    display: grid;
+    grid-auto-columns: auto;
+    justify-items: center;
+    align-items: center;
+}
+.li-form{
+    display: grid;
+    grid-auto-columns: minmax(270px, auto);
+    grid-row-gap: 20px;
+    padding: 10%;
+    text-align: center;
+}
+.li-form input::placeholder{
+    color: #FFFFFFAA;
+}
+.li-form input{
+    font-family: Baloo;
+    font-size: 25px;
+    border-radius: 35px;
+    background: none;
+    display: block;
+    padding: 20px 14px;
+    outline: none;
+    color: white;
+}
+.li-form input[type = "text"],.li-form input[type = "password"]{
+    border: 2px solid #1b1b1bcc;
+}
+.li-form input[type = "submit"]{
+    border: 2px solid gold;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.li-form input[type = "submit"]:hover{
+    background-color: #1b1b1b88;
+}
+
+.su-form{
+    padding: 5%;
+}
+/*---------------TRADING---------------*/
+/*---------------WALLET---------------*/
+/*---------------PROFILE---------------*/
+/*---------------CONTACTS---------------*/
 
 
 
