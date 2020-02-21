@@ -87,6 +87,24 @@ body {
     text-decoration: none;
 }
 
+.i-login-menu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-column-gap: 20px;
+}
+.i-login-menu div {
+    padding: 20px;
+    transition-duration: 0.07s;
+    background: #1b1b1b66;
+}
+.i-login-menu div a{
+    color: white;
+    text-decoration: none;
+}
+.i-login-menu div:hover{
+    background: #4CAF50;
+}
+
 .i-markets-coin-grid{
     display: grid;
     grid-template-rows: 50px;
