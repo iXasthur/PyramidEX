@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>PyramidEX Sign Up</title>
+    <title>PyramidEX^_^</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Baloo&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link>
 </head>
 <body>
     <header class="uni-header">
@@ -17,15 +18,10 @@
             <a href="contacts.html">CONTACTS</a>
         </nav>
     </header>
-    <main class="li-main-wrapper">
-        <form class="li-form" action="profile.html">
-            <h1>Join PyEX</h1>
-            <input type="email" name="" placeholder="E-Mail">
-            <input type="text" name="" placeholder="Nickname">
-            <input type="password" name="" placeholder="Password">
-            <input type="password" name="" placeholder="Repeat password">
-            <input type="submit" name="" value="Sign Up">
-        </form>
+    <main class="i-main-wrapper">
+        <?php
+            echo 'PHP';
+        ?>
     </main>
     <footer class="uni-footer">
         <a href="test.php">&copy PyEX Digital Assets, Ltd. 2020 - Seychelles</a>

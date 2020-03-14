@@ -15,7 +15,7 @@ body {
         font-size: 25px;
     }
 
-    .i-header{
+    .uni-header{
         grid-auto-flow: row;
         justify-content: center;
     }
@@ -41,7 +41,7 @@ body {
         font-size: 25px;
     }
 
-    .i-header {
+    .uni-header {
         grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
         justify-content: end;
     }
@@ -53,7 +53,7 @@ body {
         padding-right: 25px;
         background: #1b1b1b;
     }
-    .i-header h1 {
+    .uni-header h1 {
         justify-self: start;
         padding-left: 25px;
     }
@@ -76,18 +76,18 @@ body {
     }
 }
 
-.i-header{
+.uni-header{
     display: grid;
     text-align: center;
     align-items: center;
     background: #1b1b1b;
 }
-.i-header h1 a{
+.uni-header h1 a{
     color: white;
     text-decoration: none;
     transition-duration: 0.07s;
 }
-.i-header h1 a:hover{
+.uni-header h1 a:hover{
     color: gold;
 }
 .i-header-grid a{
@@ -169,12 +169,19 @@ body {
     align-items: center;
 }
 
-.i-footer{
+.uni-footer{
     text-align: right;
     margin-top: 10px;
     padding-right: 25px;
     background: linear-gradient(to right, #1b1b1b00, #1b1b1b);
     font-size: 20px;
+}
+.uni-footer a{
+    color: white;
+    text-decoration: none;
+}
+.uni-footer a:hover{
+    color: gold;
 }
 /*---------------LOGIN+SIGNUP---------------*/
 .li-main-wrapper{
