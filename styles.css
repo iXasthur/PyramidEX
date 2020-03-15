@@ -35,6 +35,12 @@ body {
     .w-coin-grid{
         grid-template-columns: 50px minmax(20px,1fr) 0 2fr 2fr;
     }
+
+    .t-header-form{
+        display: grid;
+        grid-auto-flow: row;
+        background: #1b1b1b;
+    }
 }
 @media screen and (min-width: 600px) {
     body{
@@ -45,7 +51,7 @@ body {
         grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
         justify-content: end;
     }
-    .i-header-grid {
+    .uni-header-grid {
         display: grid;
         grid-template-columns: repeat(4, auto);
         grid-column-gap: 25px;
@@ -74,6 +80,13 @@ body {
     .w-coin-grid{
         grid-template-columns: 50px 1fr 2fr 1fr 1fr;
     }
+
+    .t-header-form{
+        grid-template-columns: repeat(4,auto);
+        justify-content: end;
+        padding-right: 25px;
+        grid-column-gap: 25px;
+    }
 }
 
 .uni-header{
@@ -90,14 +103,14 @@ body {
 .uni-header h1 a:hover{
     color: gold;
 }
-.i-header-grid a{
+.uni-header-grid a{
     display: block;
     color: white;
     text-decoration: none;
     padding: 5px;
     transition-duration: 0.07s;
 }
-.i-header-grid a:hover{
+.uni-header-grid a:hover{
     color: chartreuse;
 }
 
@@ -183,7 +196,7 @@ body {
 .uni-footer a:hover{
     color: gold;
 }
-/*---------------LOGIN+SIGNUP---------------*/
+/*---------------LOGIN+SIGNUP+ARRMERGE---------------*/
 .li-main-wrapper{
     display: grid;
     grid-auto-columns: auto;
@@ -191,16 +204,16 @@ body {
     align-items: center;
     padding: 10% 10px;
 }
-.li-form{
+.uni-form{
     display: grid;
     grid-auto-columns: minmax(270px, auto);
     grid-row-gap: 20px;
     text-align: center;
 }
-.li-form input::placeholder{
+.uni-form input::placeholder{
     color: #FFFFFFAA;
 }
-.li-form input{
+.uni-form input{
     font-family: Baloo;
     font-size: 25px;
     border-radius: 35px;
@@ -210,10 +223,10 @@ body {
     outline: none;
     color: white;
 }
-.li-form input[type = "text"],.li-form input[type = "email"],.li-form input[type = "password"]{
+.uni-form input[type = "text"],.uni-form input[type = "email"],.uni-form input[type = "password"]{
     border: 2px solid #1b1b1bcc;
 }
-.li-form input[type = "submit"]{
+.uni-form input[type = "submit"]{
     /*border: 2px solid gold;*/
     border: 2px solid #1b1b1b66;
     background: #1b1b1b66;
@@ -222,7 +235,7 @@ body {
     transition-duration: 0.07s;
     -webkit-appearance: none;
 }
-.li-form input[type = "submit"]:hover{
+.uni-form input[type = "submit"]:hover{
     border: 2px solid #1b1b1b66;
     background: #4CAF50;
 }
@@ -290,6 +303,41 @@ body {
     text-align: center;
 }
 
+/*---------------PHP_TEST---------------*/
+.t-main-wrapper{
+    display: grid;
+    grid-auto-rows: auto;
+    justify-items: center;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.t-header-form{
+    display: grid;
+    background: #1b1b1b;
+}
+
+.t-header-form input{
+    font-family: Baloo;
+    font-size: 25px;
+    background: none;
+    padding: 5px;
+    outline: none;
+    color: white;
+}
+.t-header-form input[type = "submit"]{
+    border: none;
+    background: none;
+    transition-duration: 0.07s;
+    -webkit-appearance: none;
+}
+.t-header-form input[type = "submit"]:hover{
+    color: chartreuse;
+}
+
+#php-coloredBG{
+    background-color: slateblue;
+}
 
 
 
