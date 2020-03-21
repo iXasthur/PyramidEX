@@ -22,14 +22,13 @@
             });
         }
 
-        function getMergedArray()
+        function getMergedArray(): array
         {
             return $this->mergedArray;
         }
 
-        function getMergedEvenArray()
+        function getMergedEvenArray(): array 
         {
-
             return $this->mergedEvenArray;
         }
 
