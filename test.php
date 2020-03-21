@@ -47,7 +47,7 @@
             <h1>Merge arrays</h1>
             <h2>Input numbers separated with spaces</h2>
             <?php
-                function arrConcat($arr1, $arr2){
+                function arrConcat($arr1, $arr2) {
                     $buffLength = count($arr1) + count($arr2);
                     $firstI = count($arr1);
                     for ( $i = count($arr1); $i < $buffLength; $i++ ){
@@ -64,7 +64,7 @@
 //                        return $item % 2 === 0;
 //                    });
 
-                    for ($i = 0; $i < count($arr); $i++){
+                    for ($i = 0; $i < count($arr); $i++) {
                         if ($arr[$i] % 2 == 0){
                             $buffArray[$j] = $arr[$i];
                             $j++;
@@ -87,7 +87,7 @@
                 if (isset($_GET['mrg_arr2'])) {
                     echo '<p>';
                     echo '2nd array: ';
-                    if ( strlen($_GET['mrg_arr2']) > 0 ) {
+                    if (strlen($_GET['mrg_arr2']) > 0) {
                         echo '[' . $_GET['mrg_arr2'] . ']' . '<br/>';
                     } else {
                         echo ' []' . '<br>';
@@ -103,7 +103,7 @@
                         $numArray1 = explode(" ", $_GET['mrg_arr1']);
                     }
 
-                    if (strlen($_GET['mrg_arr2']) > 0){
+                    if (strlen($_GET['mrg_arr2']) > 0) {
                         $numArray2 = explode(" ", $_GET['mrg_arr2']);
                     }
 
