@@ -1,0 +1,12 @@
+
+.t-main-wrapper{
+    display: grid;
+    grid-auto-columns: auto;
+    justify-items: center;
+    align-items: center;
+}
+
+.t-soon{
+    text-align: center;
+    padding: 10%;
+}

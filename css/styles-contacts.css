@@ -1,0 +1,11 @@
+
+.c-main-wrapper{
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: center;
+    padding: 10%;
+}
+
+.c-contacts{
+    text-align: center;
+}

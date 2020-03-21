@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>PyramidEX Log In</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>PyramidEX Wallet</title>
+    <link rel="stylesheet" href="../css/styles-universal.css">
+    <link rel="stylesheet" href="../css/styles-wallet.css">
     <link href="https://fonts.googleapis.com/css?family=Baloo&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -11,28 +12,28 @@
     <header class="uni-header">
         <h1><a href="index.php">PyramidEX</a></h1>
         <nav class="uni-header-grid">
-            <form class="uni-header-form" method="get" action="trading.php">
+            <form class="uni-header-nav-form" method="get" action="trading.php">
                 <?php if ( isset($_GET['coloredMenu']) && $_GET['coloredMenu'] == "TRADE" ): ?>
                     <input type="submit" name="coloredMenu" value="TRADE" id="php-coloredBG">
                 <?php else: ?>
                     <input type="submit" name="coloredMenu" value="TRADE">
                 <?php endif ?>
             </form>
-            <form class="uni-header-form" method="get" action="wallet.php">
+            <form class="uni-header-nav-form" method="get" action="wallet.php">
                 <?php if ( isset($_GET['coloredMenu']) && $_GET['coloredMenu'] == "WALLET" ): ?>
                     <input type="submit" name="coloredMenu" value="WALLET" id="php-coloredBG">
                 <?php else: ?>
                     <input type="submit" name="coloredMenu" value="WALLET">
                 <?php endif ?>
             </form>
-            <form class="uni-header-form" method="get" action="profile.php">
+            <form class="uni-header-nav-form" method="get" action="profile.php">
                 <?php if ( isset($_GET['coloredMenu']) && $_GET['coloredMenu'] == "PROFILE" ): ?>
                     <input type="submit" name="coloredMenu" value="PROFILE" id="php-coloredBG">
                 <?php else: ?>
                     <input type="submit" name="coloredMenu" value="PROFILE">
                 <?php endif ?>
             </form>
-            <form class="uni-header-form" method="get" action="contacts.php">
+            <form class="uni-header-nav-form" method="get" action="contacts.php">
                 <?php if ( isset($_GET['coloredMenu']) && $_GET['coloredMenu'] == "CONTACTS" ): ?>
                     <input type="submit" name="coloredMenu" value="CONTACTS" id="php-coloredBG">
                 <?php else: ?>
@@ -41,16 +42,43 @@
             </form>
         </nav>
     </header>
-    <main class="li-main-wrapper">
-        <form class="uni-form" action="profile.php">
-            <h1>Log In to PyEX</h1>
-            <input type="email" name="" placeholder="E-Mail">
-            <input type="password" name="" placeholder="Password">
-            <input type="submit" name="" value="Log In">
-        </form>
+    <main class="w-main-wrapper">
+        <section class="w-info">
+            <h2>OVERALL BALANCE: 110500$ (11.05 BTC)</h2>
+        </section>
+        <section class="w-balance-grid">
+            <div class="w-coin-grid">
+                <p>Name</p>
+                <p></p>
+                <p></p>
+                <p>Amount</p>
+                <p>Balance</p>
+            </div>
+            <div class="w-coin-grid">
+                <img src="../img/BTC.png" alt="BTC">
+                <p class="uni-coin-sname">BTC</p>
+                <p class="uni-coin-fname">Bitcoin</p>
+                <p>10</p>
+                <p>100000$</p>
+            </div>
+            <div class="w-coin-grid">
+                <img src="../img/ETH.png" alt="ETH">
+                <p class="uni-coin-sname">ETH</p>
+                <p class="uni-coin-fname">Ethereum</p>
+                <p>5</p>
+                <p>2500$</p>
+            </div>
+            <div class="w-coin-grid">
+                <img src="../img/EOS.png" alt="EOS">
+                <p class="uni-coin-sname">EOS</p>
+                <p class="uni-coin-fname">EOS</p>
+                <p>400</p>
+                <p>8000$</p>
+            </div>
+        </section>
     </main>
     <footer class="uni-footer">
-        <a href="test.php">&copy PyEX Digital Assets, Ltd. 2020 - Seychelles</a>
+        <a href="ext.php">&copy PyEX Digital Assets, Ltd. 2020 - Seychelles</a>
     </footer>
 </body>
 </html>

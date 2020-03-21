@@ -1,0 +1,8 @@
+
+.ext-main-wrapper{
+    display: grid;
+    grid-auto-rows: auto;
+    justify-items: center;
+    align-items: center;
+    padding: 20px 10px;
+}
