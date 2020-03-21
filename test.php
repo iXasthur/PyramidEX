@@ -57,7 +57,7 @@
                 }
 
                 function arrEven($arr){
-                    $buffArray = array();
+                    $buffArray = [];
                     $j = 0;
 
 //                    return array_filter($arr, function ($item) {
@@ -97,7 +97,7 @@
 
                 if (isset($_GET['mrg_arr1']) && isset($_GET['mrg_arr2'])) {
                     $numArray1 = [];
-                    $numArray2 = array();
+                    $numArray2 = [];
 
                     if (strlen($_GET['mrg_arr1']) > 0) {
                         $numArray1 = explode(" ", $_GET['mrg_arr1']);
