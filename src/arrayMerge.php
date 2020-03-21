@@ -1,13 +1,15 @@
 <?php
-    require 'ArrayMergerClass.php';
 
     if (isset($_GET['mrg_arr1']) && isset($_GET['mrg_arr2'])) {
+
+        require 'ArrayMergerClass.php';
+
         echo '<p>';
         echo '1st array: ';
         if (strlen($_GET['mrg_arr1']) > 0) {
             echo '[' . $_GET['mrg_arr1'] . ']';
         } else {
-            echo ' []';
+            echo '[]';
         }
         echo '<br>';
         echo '</p>';
@@ -17,7 +19,7 @@
         if (strlen($_GET['mrg_arr2']) > 0) {
             echo '[' . $_GET['mrg_arr2'] . ']';
         } else {
-            echo ' []';
+            echo '[]';
         }
         echo '<br>';
         echo '</p>';

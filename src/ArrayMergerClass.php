@@ -1,11 +1,10 @@
 <?php
     class ArrayMerger
     {
-
         private $mergedArray = [];
         private $mergedEvenArray = [];
 
-        private function createArrayConcatenation($arr1, $arr2)
+        private function createArrayConcatenation($arr1, $arr2): array
         {
             $buffLength = count($arr1) + count($arr2);
             $firstI = count($arr1);
@@ -15,7 +14,7 @@
             return $arr1;
         }
 
-        private function createEvenArray($arr)
+        private function createEvenArray($arr): array
         {
             return array_filter($arr, function ($item) {
                 return $item % 2 === 0;
