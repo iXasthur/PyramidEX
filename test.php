@@ -10,39 +10,44 @@
 </head>
 <body>
     <header class="uni-header">
-        <h1><a href="index.html">PyramidEX</a></h1>
-        <form class="t-header-form" method="get">
-            <?php if ( isset($_GET['coloredMenu']) && $_GET['coloredMenu'] == "TRADE" ): ?>
-                <input type="submit" name="coloredMenu" value="TRADE" id="php-coloredBG">
-            <?php else: ?>
-                <input type="submit" name="coloredMenu" value="TRADE">
-            <?php endif ?>
-
-            <?php if ( isset($_GET['coloredMenu']) && $_GET['coloredMenu'] == "WALLET" ): ?>
-                <input type="submit" name="coloredMenu" value="WALLET" id="php-coloredBG">
-            <?php else: ?>
-                <input type="submit" name="coloredMenu" value="WALLET">
-            <?php endif ?>
-
-            <?php if ( isset($_GET['coloredMenu']) && $_GET['coloredMenu'] == "PROFILE" ): ?>
-                <input type="submit" name="coloredMenu" value="PROFILE" id="php-coloredBG">
-            <?php else: ?>
-                <input type="submit" name="coloredMenu" value="PROFILE">
-            <?php endif ?>
-
-            <?php if ( isset($_GET['coloredMenu']) && $_GET['coloredMenu'] == "CONTACTS" ): ?>
-                <input type="submit" name="coloredMenu" value="CONTACTS" id="php-coloredBG">
-            <?php else: ?>
-                <input type="submit" name="coloredMenu" value="CONTACTS">
-            <?php endif ?>
-        </form>
+        <h1><a href="index.php">PyramidEX</a></h1>
+        <nav class="uni-header-grid">
+            <form class="uni-header-form" method="get" action="trading.php">
+                <?php if ( isset($_GET['coloredMenu']) && $_GET['coloredMenu'] == "TRADE" ): ?>
+                    <input type="submit" name="coloredMenu" value="TRADE" id="php-coloredBG">
+                <?php else: ?>
+                    <input type="submit" name="coloredMenu" value="TRADE">
+                <?php endif ?>
+            </form>
+            <form class="uni-header-form" method="get" action="wallet.php">
+                <?php if ( isset($_GET['coloredMenu']) && $_GET['coloredMenu'] == "WALLET" ): ?>
+                    <input type="submit" name="coloredMenu" value="WALLET" id="php-coloredBG">
+                <?php else: ?>
+                    <input type="submit" name="coloredMenu" value="WALLET">
+                <?php endif ?>
+            </form>
+            <form class="uni-header-form" method="get" action="profile.php">
+                <?php if ( isset($_GET['coloredMenu']) && $_GET['coloredMenu'] == "PROFILE" ): ?>
+                    <input type="submit" name="coloredMenu" value="PROFILE" id="php-coloredBG">
+                <?php else: ?>
+                    <input type="submit" name="coloredMenu" value="PROFILE">
+                <?php endif ?>
+            </form>
+            <form class="uni-header-form" method="get" action="contacts.php">
+                <?php if ( isset($_GET['coloredMenu']) && $_GET['coloredMenu'] == "CONTACTS" ): ?>
+                    <input type="submit" name="coloredMenu" value="CONTACTS" id="php-coloredBG">
+                <?php else: ?>
+                    <input type="submit" name="coloredMenu" value="CONTACTS">
+                <?php endif ?>
+            </form>
+        </nav>
     </header>
     <main class="t-main-wrapper">
         <form class="uni-form" method="get">
             <h1>Merge arrays</h1>
             <h2>Input numbers separated with spaces</h2>
             <?php
-                function arr_concat($arr1, $arr2){
+                function arrConcat($arr1, $arr2){
                     $buffLength = count($arr1) + count($arr2);
                     $firstI = count($arr1);
                     for ( $i = count($arr1); $i < $buffLength; $i++ ){
@@ -51,11 +56,16 @@
                     return $arr1;
                 }
 
-                function arr_even($arr){
+                function arrEven($arr){
                     $buffArray = array();
                     $j = 0;
-                    for ( $i = 0; $i < count($arr); $i++ ){
-                        if ( $arr[$i] % 2 == 0 ){
+
+//                    return array_filter($arr, function ($item) {
+//                        return $item % 2 === 0;
+//                    });
+
+                    for ($i = 0; $i < count($arr); $i++){
+                        if ($arr[$i] % 2 == 0){
                             $buffArray[$j] = $arr[$i];
                             $j++;
                         }
@@ -63,10 +73,10 @@
                     return $buffArray;
                 }
 
-                if ( isset($_GET['mrg_arr1']) ) {
+                if (isset($_GET['mrg_arr1'])) {
                     echo '<p>';
                     echo '1st array: ';
-                    if ( strlen($_GET['mrg_arr1']) > 0 ) {
+                    if (strlen($_GET['mrg_arr1']) > 0) {
                         echo '[' . $_GET['mrg_arr1'] . ']' . '<br>';
                     } else {
                         echo ' []' . '<br>';
@@ -74,7 +84,7 @@
                     echo '</p>';
                 }
 
-                if ( isset($_GET['mrg_arr2']) ) {
+                if (isset($_GET['mrg_arr2'])) {
                     echo '<p>';
                     echo '2nd array: ';
                     if ( strlen($_GET['mrg_arr2']) > 0 ) {
@@ -85,20 +95,20 @@
                     echo '</p>';
                 }
 
-                if ( isset($_GET['mrg_arr1']) && isset($_GET['mrg_arr2']) ) {
-                    $numArray1 = array();
+                if (isset($_GET['mrg_arr1']) && isset($_GET['mrg_arr2'])) {
+                    $numArray1 = [];
                     $numArray2 = array();
 
-                    if ( strlen($_GET['mrg_arr1']) > 0 ){
-                        $numArray1 = explode(" ",$_GET['mrg_arr1']);
+                    if (strlen($_GET['mrg_arr1']) > 0) {
+                        $numArray1 = explode(" ", $_GET['mrg_arr1']);
                     }
 
-                    if ( strlen($_GET['mrg_arr2']) > 0 ){
-                        $numArray2 = explode(" ",$_GET['mrg_arr2']);
+                    if (strlen($_GET['mrg_arr2']) > 0){
+                        $numArray2 = explode(" ", $_GET['mrg_arr2']);
                     }
 
-                    $numArrayMrg = arr_concat($numArray1,$numArray2);
-                    $numArrayMrgEven = arr_even($numArrayMrg);
+                    $numArrayMrg = arrConcat($numArray1,$numArray2);
+                    $numArrayMrgEven = arrEven($numArrayMrg);
 
                     echo '<p>';
                     echo 'New array: [' . implode( " ", $numArrayMrg) . ']';

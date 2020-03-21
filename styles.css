@@ -36,7 +36,7 @@ body {
         grid-template-columns: 50px minmax(20px,1fr) 0 2fr 2fr;
     }
 
-    .t-header-form{
+    .uni-header-form{
         display: grid;
         grid-auto-flow: row;
         background: #1b1b1b;
@@ -54,9 +54,9 @@ body {
     .uni-header-grid {
         display: grid;
         grid-template-columns: repeat(4, auto);
-        grid-column-gap: 25px;
+        /*grid-column-gap: 25px;*/
         justify-content: end;
-        padding-right: 25px;
+        /*padding-right: 25px;*/
         background: #1b1b1b;
     }
     .uni-header h1 {
@@ -81,8 +81,8 @@ body {
         grid-template-columns: 50px 1fr 2fr 1fr 1fr;
     }
 
-    .t-header-form{
-        grid-template-columns: repeat(4,auto);
+    .uni-header-form{
+        grid-template-columns: 1fr;
         justify-content: end;
         padding-right: 25px;
         grid-column-gap: 25px;
@@ -102,16 +102,6 @@ body {
 }
 .uni-header h1 a:hover{
     color: gold;
-}
-.uni-header-grid a{
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 5px;
-    transition-duration: 0.07s;
-}
-.uni-header-grid a:hover{
-    color: chartreuse;
 }
 
 .i-main-wrapper{
@@ -312,12 +302,12 @@ body {
     padding: 20px 10px;
 }
 
-.t-header-form{
+.uni-header-form{
     display: grid;
     background: #1b1b1b;
 }
 
-.t-header-form input{
+.uni-header-form input{
     font-family: Baloo;
     font-size: 25px;
     background: none;
@@ -325,13 +315,13 @@ body {
     outline: none;
     color: white;
 }
-.t-header-form input[type = "submit"]{
+.uni-header-form input[type = "submit"]{
     border: none;
     background: none;
     transition-duration: 0.07s;
     -webkit-appearance: none;
 }
-.t-header-form input[type = "submit"]:hover{
+.uni-header-form input[type = "submit"]:hover{
     color: chartreuse;
 }
 
