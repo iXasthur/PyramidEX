@@ -132,7 +132,7 @@ body {
     color: #FFFFFFAA;
 }
 .uni-form input{
-    font-family: Baloo;
+    font-family: Baloo, sans-serif;
     font-size: 25px;
     border-radius: 35px;
     background: none;
