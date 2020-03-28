@@ -1,6 +1,6 @@
 
 # Created by https://www.gitignore.io/api/xcode,linux,macos,windows,visualstudio,jetbrains+all,visualstudiocode
-# Edit at https://www.gitignore.io/?templates=xcode,linux,macos,windows,visualstudio,jetbrains+all,visualstudiocode
+# Edit at https://www.gitignore.io/?templates=xcode,linux,macos,windows,visualstudio,jetbrains+all,visualstudiocode,composer
 
 ### JetBrains+all ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm
@@ -552,4 +552,14 @@ healthchecksdb
 # Backup folder for Package Reference Convert tool in Visual Studio 2017
 MigrationBackup/
 
+### Composer ###
+composer.phar
+/vendor/
+
+# Commit your application's lock file https://getcomposer.org/doc/01-basic-usage.md#commit-your-composer-lock-file-to-version-control
+# You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
+# composer.lock
+
 # End of https://www.gitignore.io/api/xcode,linux,macos,windows,visualstudio,jetbrains+all,visualstudiocode
+
+

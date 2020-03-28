@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Baloo, sans-serif;
+    background: linear-gradient(to left, #8942a8, #ba382f);
+    color: white;
+}
+
+
+/*---------------HEADER+FOOTER---------------*/
+@media screen and (max-width: 600px) {
+    body{
+        font-size: 25px;
+    }
+
+    .uni-header{
+        grid-auto-flow: row;
+        justify-content: center;
+    }
+
+    .uni-coin-fname{
+        visibility: hidden;
+    }
+
+    .uni-header-nav-form{
+        display: grid;
+        grid-auto-flow: row;
+        background: #1b1b1b;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    body{
+        font-size: 25px;
+    }
+
+    .uni-header {
+        grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
+        justify-content: end;
+    }
+    .uni-header-grid {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-column-gap: 25px;
+        justify-content: end;
+        padding-right: 25px;
+        background: #1b1b1b;
+    }
+    .uni-header h1 {
+        justify-self: start;
+        padding-left: 25px;
+    }
+
+    .uni-coin-fname{
+        text-align: left;
+        visibility: visible;
+    }
+
+    .uni-header-nav-form{
+        grid-template-columns: 1fr;
+        justify-content: end;
+    }
+}
+
+.uni-header{
+    display: grid;
+    text-align: center;
+    align-items: center;
+    background: #1b1b1b;
+}
+.uni-header h1 a{
+    color: white;
+    text-decoration: none;
+    transition-duration: 0.07s;
+}
+.uni-header h1 a:hover{
+    color: gold;
+}
+
+.uni-header-nav-form{
+    display: grid;
+    background: #1b1b1b;
+}
+
+.uni-header-nav-form input{
+    font-family: Baloo, sans-serif;
+    font-size: 25px;
+    background: none;
+    padding: 5px;
+    outline: none;
+    color: white;
+}
+.uni-header-nav-form input[type = "submit"]{
+    border: none;
+    background: none;
+    transition-duration: 0.07s;
+    -webkit-appearance: none;
+}
+.uni-header-nav-form input[type = "submit"]:hover{
+    color: chartreuse;
+}
+
+/*---------------LOGIN+SIGNUP+ARRMERGE FORMS---------------*/
+#php-coloredBG{
+    background-color: slateblue;
+}
+.uni-footer{
+    text-align: right;
+    margin-top: 10px;
+    padding-right: 25px;
+    background: linear-gradient(to right, #1b1b1b00, #1b1b1b);
+    font-size: 20px;
+}
+.uni-footer a{
+    color: white;
+    text-decoration: none;
+}
+.uni-footer a:hover{
+    color: gold;
+}
+
+.uni-form{
+    display: grid;
+    grid-auto-columns: minmax(270px, auto);
+    grid-row-gap: 20px;
+    text-align: center;
+}
+.uni-form input::placeholder{
+    color: #FFFFFFAA;
+}
+.uni-form input{
+    font-family: Baloo, sans-serif;
+    font-size: 25px;
+    border-radius: 35px;
+    background: none;
+    display: block;
+    padding: 20px 14px;
+    outline: none;
+    color: white;
+}
+.uni-form input[type = "text"], .uni-form input[type = "email"], .uni-form input[type = "password"]{
+    border: 2px solid #1b1b1bcc;
+}
+.uni-form input[type = "submit"]{
+    /*border: 2px solid gold;*/
+    border: 2px solid #1b1b1b66;
+    background: #1b1b1b66;
+    margin-left: 50px;
+    margin-right: 50px;
+    transition-duration: 0.07s;
+    -webkit-appearance: none;
+}
+.uni-form input[type = "submit"]:hover{
+    border: 2px solid #1b1b1b66;
+    background: #4CAF50;
+}

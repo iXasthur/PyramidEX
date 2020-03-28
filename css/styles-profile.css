@@ -1,0 +1,13 @@
+
+.p-main-wrapper{
+    display: grid;
+    grid-auto-columns: auto;
+    grid-row-gap: 50px;
+    justify-items: start;
+    align-items: center;
+    padding: 5% 20%;
+}
+
+.p-info{
+    text-align: left;
+}

@@ -1,0 +1,7 @@
+.su-main-wrapper{
+    display: grid;
+    grid-auto-columns: auto;
+    justify-items: center;
+    align-items: center;
+    padding: 10% 10px;
+}
