@@ -2,6 +2,7 @@
 .ext-main-wrapper{
     display: grid;
     grid-auto-rows: auto;
+    grid-row-gap: 50px;
     justify-items: center;
     align-items: center;
     padding: 20px 10px;
