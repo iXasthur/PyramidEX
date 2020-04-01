@@ -13,29 +13,14 @@
     <header class="uni-header">
         <h1><a href="index.php">PyramidEX</a></h1>
         <nav class="uni-header-grid">
-            <?php include 'headerMenuOutput.php'; ?>
+            <a href="trading.php">TRADE</a>
+            <a href="wallet.php">WALLET</a>
+            <a href="profile.php">PROFILE</a>
+            <a href="contacts.php">CONTACTS</a>
         </nav>
     </header>
     <main class="ext-main-wrapper">
-        <form class="uni-form" method="get">
-            <h1>Merge arrays</h1>
-            <h2>Input numbers separated with spaces</h2>
-            <?php include 'arrayMerge.php'; ?>
-            <input type="text" autocomplete="off" name="mrg_arr1" placeholder="1st array" pattern="^([0-9] ?)*[0-9]$">
-            <input type="text" autocomplete="off" name="mrg_arr2" placeholder="2nd array" pattern="^([0-9] ?)*[0-9]$">
-            <input type="submit" name="" value="Merge">
-        </form>
-        <form class="uni-form" method="get">
-            <h1>Get file tree</h1>
-            <h2>Input path</h2>
-            <input type="text" autocomplete="off" name="ftree_path" placeholder="Path">
-            <input type="submit" name="" value="Get">
-        </form>
-        <form class="uni-form" method="get">
-            <h1>Test shortener</h1>
-            <input type="text" autocomplete="off" name="tshrt_text" placeholder="Text">
-            <input type="submit" name="" value="Shorten">
-        </form>
+
     </main>
     <footer class="uni-footer">
         <a href="ext.php">&copy PyEX Digital Assets, Ltd. 2020 - Seychelles</a>

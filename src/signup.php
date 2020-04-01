@@ -12,7 +12,10 @@
     <header class="uni-header">
         <h1><a href="index.php">PyramidEX</a></h1>
         <nav class="uni-header-grid">
-            <?php include 'headerMenuOutput.php'; ?>
+            <a href="trading.php">TRADE</a>
+            <a href="wallet.php">WALLET</a>
+            <a href="profile.php">PROFILE</a>
+            <a href="contacts.php">CONTACTS</a>
         </nav>
     </header>
     <main class="su-main-wrapper">
