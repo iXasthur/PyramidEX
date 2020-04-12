@@ -26,31 +26,3 @@
         <input type="submit" name="coloredMenu" value="CONTACTS">
     <?php } ?>
 </form>
-
-<!--echo '<form class="uni-header-nav-form" method="get" action="trading.php">';-->
-<!--if (isset($_GET['coloredMenu']) && 'TRADE' == $_GET['coloredMenu']) {-->
-<!--    echo '<input type="submit" name="coloredMenu" value="TRADE" id="php-coloredBG">';-->
-<!--} else {-->
-<!--    echo '<input type="submit" name="coloredMenu" value="TRADE">';-->
-<!--}-->
-<!---->
-<!--echo '<form class="uni-header-nav-form" method="get" action="wallet.php">';-->
-<!--if (isset($_GET['coloredMenu']) && 'WALLET' == $_GET['coloredMenu']) {-->
-<!--    echo '<input type="submit" name="coloredMenu" value="WALLET" id="php-coloredBG">';-->
-<!--} else {-->
-<!--    echo '<input type="submit" name="coloredMenu" value="WALLET">';-->
-<!--}-->
-<!---->
-<!--echo '<form class="uni-header-nav-form" method="get" action="profile.php">';-->
-<!--if (isset($_GET['coloredMenu']) && 'PROFILE' == $_GET['coloredMenu']) {-->
-<!--    echo '<input type="submit" name="coloredMenu" value="PROFILE" id="php-coloredBG">';-->
-<!--} else {-->
-<!--    echo '<input type="submit" name="coloredMenu" value="PROFILE">';-->
-<!--}-->
-<!---->
-<!--echo '<form class="uni-header-nav-form" method="get" action="contacts.php">';-->
-<!--if (isset($_GET['coloredMenu']) && 'CONTACTS' == $_GET['coloredMenu']) {-->
-<!--    echo '<input type="submit" name="coloredMenu" value="CONTACTS" id="php-coloredBG">';-->
-<!--} else {-->
-<!--    echo '<input type="submit" name="coloredMenu" value="CONTACTS">';-->
-<!--}-->
