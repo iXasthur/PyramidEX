@@ -1,29 +1,3 @@
-/*---------------INDEX+HEADER+FOOTER---------------*/
-@media screen and (max-width: 600px) {
-
-    .i-markets-coin-grid{
-        grid-template-columns: 50px minmax(20px,1fr) 0 2fr 2fr;
-    }
-
-    .i-partners-grid{
-        grid-auto-flow: row;
-        grid-auto-rows: 80px;
-    }
-
-}
-
-@media screen and (min-width: 600px) {
-
-    .i-markets-coin-grid{
-        grid-template-columns: 50px 1fr 2fr 1fr 1fr;
-    }
-
-    .i-partners-grid{
-        grid-template-columns: repeat(3,1fr);
-        grid-auto-rows: 100px;
-    }
-
-}
 
 .i-main-wrapper{
     display: grid;
@@ -31,66 +5,6 @@
     justify-content: center;
     padding-right: 40px;
     padding-left: 40px;
-}
-
-.i-features{
-    padding-top: 70px;
-    text-align: left;
-}
-.i-login-menu{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-    grid-column-gap: 20px;
-    grid-row-gap: 15px;
-}
-.i-login-menu a span {
-    display: block;
-}
-.i-login-menu a{
-    color: white;
-    text-decoration: none;
-    background: #1b1b1b66;
-    padding: 20px;
-    transition-duration: 0.07s;
-    border: 2px solid #1b1b1b66;
-    border-radius: 30px;
-}
-.i-login-menu a:hover{
-    background: #4CAF50;
-}
-
-.i-markets{
-    display: grid;
-    grid-auto-flow: row;
-    text-align: left;
-    padding-top: 100px;
-}
-.i-markets-grid{
-    display: grid;
-    grid-auto-rows: 50px;
-    grid-row-gap: 15px;
-}
-.i-markets-coin-grid{
-    display: grid;
-    grid-template-rows: 50px;
-    grid-column-gap: 20px;
-    text-align: center;
-    align-items: center;
-}
-.i-markets-coin-grid img{
-    width: 50px;
-    height: 50px;
-}
-
-.i-partners{
-    padding-top: 100px;
-    text-align: left;
-}
-.i-partners-grid{
-    display: grid;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
 }
 
 

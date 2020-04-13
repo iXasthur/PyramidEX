@@ -1,28 +1,28 @@
-<form class="uni-header-nav-form" method="get" action="trading.php">
-    <?php if (isset($_GET['coloredMenu']) && 'TRADE' == $_GET['coloredMenu']) { ?>
-        <input type="submit" name="coloredMenu" value="TRADE" id="php-coloredBG">
+<form class="uni-header-nav-form" method="get" action="index.php">
+    <?php if (isset($_GET['tab']) && 'TRADE' == $_GET['tab']) { ?>
+        <input type="submit" name="tab" value="TRADE" id="php-coloredBG">
     <?php } else { ?>
-        <input type="submit" name="coloredMenu" value="TRADE">
+        <input type="submit" name="tab" value="TRADE">
     <?php } ?>
 </form>
-<form class="uni-header-nav-form" method="get" action="wallet.php">
-    <?php if (isset($_GET['coloredMenu']) && 'WALLET' == $_GET['coloredMenu']) { ?>
-        <input type="submit" name="coloredMenu" value="WALLET" id="php-coloredBG">
+<form class="uni-header-nav-form" method="get" action="index.php">
+    <?php if (isset($_GET['tab']) && 'WALLET' == $_GET['tab']) { ?>
+        <input type="submit" name="tab" value="WALLET" id="php-coloredBG">
     <?php } else { ?>
-        <input type="submit" name="coloredMenu" value="WALLET">
+        <input type="submit" name="tab" value="WALLET">
     <?php } ?>
 </form>
-<form class="uni-header-nav-form" method="get" action="profile.php">
-    <?php if (isset($_GET['coloredMenu']) && 'PROFILE' == $_GET['coloredMenu']) { ?>
-        <input type="submit" name="coloredMenu" value="PROFILE" id="php-coloredBG">
+<form class="uni-header-nav-form" method="get" action="index.php">
+    <?php if (isset($_GET['tab']) && 'PROFILE' == $_GET['tab']) { ?>
+        <input type="submit" name="tab" value="PROFILE" id="php-coloredBG">
     <?php } else { ?>
-        <input type="submit" name="coloredMenu" value="PROFILE">
+        <input type="submit" name="tab" value="PROFILE">
     <?php } ?>
 </form>
-<form class="uni-header-nav-form" method="get" action="contacts.php">
-    <?php if (isset($_GET['coloredMenu']) && 'CONTACTS' == $_GET['coloredMenu']) { ?>
-        <input type="submit" name="coloredMenu" value="CONTACTS" id="php-coloredBG">
+<form class="uni-header-nav-form" method="get" action="index.php">
+    <?php if (isset($_GET['tab']) && 'CONTACTS' == $_GET['tab']) { ?>
+        <input type="submit" name="tab" value="CONTACTS" id="php-coloredBG">
     <?php } else { ?>
-        <input type="submit" name="coloredMenu" value="CONTACTS">
+        <input type="submit" name="tab" value="CONTACTS">
     <?php } ?>
 </form>

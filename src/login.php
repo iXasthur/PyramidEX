@@ -16,11 +16,12 @@
         </nav>
     </header>
     <main class="li-main-wrapper">
-        <form class="uni-form" action="profile.php">
+        <form class="uni-form" method="get" action="index.php">
             <h1>Log In to PyEX</h1>
             <input type="email" name="" placeholder="E-Mail">
             <input type="password" name="" placeholder="Password">
-            <input type="submit" name="" value="Log In">
+            <input type="hidden" name="tab" value="PROFILE">
+            <input type="submit" value="Log In">
         </form>
     </main>
     <footer class="uni-footer">

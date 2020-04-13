@@ -16,13 +16,14 @@
         </nav>
     </header>
     <main class="su-main-wrapper">
-        <form class="uni-form" action="profile.php">
+        <form class="uni-form" method="get" action="index.php">
             <h1>Join PyEX</h1>
             <input type="email" name="" placeholder="E-Mail">
             <input type="text" name="" placeholder="Nickname">
             <input type="password" name="" placeholder="Password">
             <input type="password" name="" placeholder="Repeat password">
-            <input type="submit" name="" value="Sign Up">
+            <input type="hidden" name="tab" value="PROFILE">
+            <input type="submit" value="Sign Up">
         </form>
     </main>
     <footer class="uni-footer">
