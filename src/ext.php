@@ -20,7 +20,7 @@
         <form class="uni-form" method="get">
             <h1>Merge arrays</h1>
             <h2>Input numbers separated with spaces</h2>
-            <?php include 'arrayMerge.php'; ?>
+            <?php include 'extArrayMerge/arrayMerge.php'; ?>
             <input type="text" autocomplete="off" name="mrg_arr1" placeholder="1st array" pattern="^([0-9] ?)*[0-9]$">
             <input type="text" autocomplete="off" name="mrg_arr2" placeholder="2nd array" pattern="^([0-9] ?)*[0-9]$">
             <input type="submit" name="" value="Merge">
