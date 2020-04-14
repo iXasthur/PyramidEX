@@ -29,7 +29,7 @@
             <h1>Get file tree</h1>
             <h2>Input path</h2>
             <?php include 'extFileTree/fileTree.php'; ?>
-            <input type="text" autocomplete="off" name="ftree_path" placeholder="Path">
+            <input type="text" autocomplete="off" name="ftree_path" placeholder="Path" pattern="\.[^\.]*">
             <input type="submit" name="" value="Get">
         </form>
     </main>
