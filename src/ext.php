@@ -20,7 +20,7 @@
         <form class="uni-form" method="get">
             <h1>Merge arrays</h1>
             <h2>Input numbers separated with spaces</h2>
-            <?php include 'arrayMerge.php'; ?>
+            <?php include 'extArrayMerge/arrayMerge.php'; ?>
             <input type="text" autocomplete="off" name="mrg_arr1" placeholder="1st array" pattern="^([0-9] ?)*[0-9]$">
             <input type="text" autocomplete="off" name="mrg_arr2" placeholder="2nd array" pattern="^([0-9] ?)*[0-9]$">
             <input type="submit" name="" value="Merge">
@@ -28,6 +28,7 @@
         <form class="uni-form" method="get">
             <h1>Get file tree</h1>
             <h2>Input path</h2>
+            <?php include 'extFileTree/fileTree.php'; ?>
             <input type="text" autocomplete="off" name="ftree_path" placeholder="Path">
             <input type="submit" name="" value="Get">
         </form>
