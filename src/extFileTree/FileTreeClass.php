@@ -7,6 +7,14 @@
         private FileTreeNode $mainNode;
         private int $overallSize;
 
+        public function __construct(string $path)
+        {
+            $this->mainNode = new FileTreeNode(realpath($path));
+            $this->overallSize = 0;
+
+            $this->getNodes($this->mainNode);
+        }
+
         private function getNodes(FileTreeNode $node)
         {
             $saveDir = getcwd();
@@ -49,13 +57,5 @@
             echo '<td>Size: '.$this->overallSize.' bytes</td>';
             echo '</tr>';
             echo '</table>';
-        }
-
-        public function __construct(string $path)
-        {
-            $this->mainNode = new FileTreeNode(realpath($path));
-            $this->overallSize = 0;
-
-            $this->getNodes($this->mainNode);
         }
     }
