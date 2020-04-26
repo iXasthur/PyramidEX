@@ -3,102 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <title>PyramidEX^_^</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles-universal.css">
     <link rel="stylesheet" href="../css/styles-index.css">
-    <link href="https://fonts.googleapis.com/css?family=Baloo&display=swap" rel="stylesheet">
+    <?php
+    if (!isset($_GET['tab'])) {
+        echo '<link rel="stylesheet" href="../css/styles-main.css">';
+    } else {
+        switch ($_GET['tab']) {
+            case 'TRADE':
+                echo '<link rel="stylesheet" href="../css/styles-trading.css">';
+                break;
+            case 'WALLET':
+                echo '<link rel="stylesheet" href="../css/styles-wallet.css">';
+                break;
+            case 'PROFILE':
+                echo '<link rel="stylesheet" href="../css/styles-profile.css">';
+                break;
+            case 'CONTACTS':
+                echo '<link rel="stylesheet" href="../css/styles-contacts.css">';
+                break;
+            default:
+                echo '<link rel="stylesheet" href="../css/styles-unknownPage.css">';
+                break;
+        }
+    }
+    ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link>
 </head>
 <body>
-    <header class="uni-header">
-        <h1><a href="index.php">PyramidEX</a></h1>
-        <nav class="uni-header-grid">
-            <a href="trading.php">TRADE</a>
-            <a href="wallet.php">WALLET</a>
-            <a href="profile.php">PROFILE</a>
-            <a href="contacts.php">CONTACTS</a>
-        </nav>
-    </header>
-    <main class="i-main-wrapper">
-        <section class="i-features">
-            <h2>Buy. Sell. Trade.</h2>
-            <p>BTC, ETH, USDT, TRX, and the best altcoins on the market.</p>
-            <div class="i-login-menu">
-                <a href="login.php"><span>Log In</span></a>
-                <a href="signup.php"><span>Sign Up</span></a>
-            </div>
-        </section>
-        <section class="i-markets">
-            <h2>Markets</h2>
-            <div class="i-markets-grid">
-                <div class="i-markets-coin-grid">
-                    <p>Name</p>
-                    <p></p>
-                    <p></p>
-                    <p>24h Change</p>
-                    <p>Last price</p>
-                </div>
-                <div class="i-markets-coin-grid">
-                    <img src="../img/BTC.png" alt="BTC">
-                    <p class="uni-coin-sname">BTC</p>
-                    <p class="uni-coin-fname">Bitcoin</p>
-                    <p>+10%</p>
-                    <p>1000$</p>
-                </div>
-                <div class="i-markets-coin-grid">
-                    <img src="../img/ETH.png" alt="ETH">
-                    <p class="uni-coin-sname">ETH</p>
-                    <p class="uni-coin-fname">Ethereum</p>
-                    <p>+10%</p>
-                    <p>50$</p>
-                </div>
-                <div class="i-markets-coin-grid">
-                    <img src="../img/EOS.png" alt="EOS">
-                    <p class="uni-coin-sname">EOS</p>
-                    <p class="uni-coin-fname">EOS</p>
-                    <p>+20%</p>
-                    <p>42$</p>
-                </div>
-                <div class="i-markets-coin-grid">
-                    <img src="../img/IOTA.png" alt="IOTA">
-                    <p class="uni-coin-sname">IOTA</p>
-                    <p class="uni-coin-fname">MIOTA</p>
-                    <p>+4%</p>
-                    <p>7$</p>
-                </div>
-                <div class="i-markets-coin-grid">
-                    <img src="../img/XRP.png" alt="XRP">
-                    <p class="uni-coin-sname">XRP</p>
-                    <p class="uni-coin-fname">Ripple</p>
-                    <p>-7%</p>
-                    <p>2$</p>
-                </div>
-                <div class="i-markets-coin-grid">
-                    <img src="../img/BCH.png" alt="BCH">
-                    <p class="uni-coin-sname">BCH</p>
-                    <p class="uni-coin-fname">Bitcoin cash</p>
-                    <p>-17%</p>
-                    <p>400$</p>
-                </div>
-            </div>
-        </section>
-        <section class="i-partners">
-            <h2>Partners</h2>
-            <div class="i-partners-grid">
-                <div>
-                    <h3>Google inc.</h3>
-                </div>
-                <div>
-                    <h3>Apple inc.</h3>
-                </div>
-                <div>
-                    <h3>Chikibamboni inc.</h3>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="uni-footer">
-        <a href="ext.php">&copy PyEX Digital Assets, Ltd. 2020 - Seychelles</a>
-    </footer>
+<header class="uni-header">
+    <h1><a href="index.php">PyramidEX</a></h1>
+    <nav class="uni-header-grid">
+        <?php include 'headerMenuOutput.php'; ?>
+    </nav>
+</header>
+<main>
+    <?php
+    if (!isset($_GET['tab'])) {
+        include 'main.php';
+    } else {
+        switch ($_GET['tab']) {
+            case 'TRADE':
+                include 'trading.php';
+                break;
+            case 'WALLET':
+                include 'wallet.php';
+                break;
+            case 'PROFILE':
+                include 'profile.php';
+                break;
+            case 'CONTACTS':
+                include 'contacts.php';
+                break;
+            default:
+                include 'unknownPage.php';
+                break;
+        }
+    }
+    ?>
+</main>
+<footer class="uni-footer">
+    <a href="ext.php">&copy PyEX Digital Assets, Ltd. 2020 - Seychelles</a>
+</footer>
 </body>
 </html>

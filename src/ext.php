@@ -13,14 +13,18 @@
     <header class="uni-header">
         <h1><a href="index.php">PyramidEX</a></h1>
         <nav class="uni-header-grid">
-            <a href="trading.php">TRADE</a>
-            <a href="wallet.php">WALLET</a>
-            <a href="profile.php">PROFILE</a>
-            <a href="contacts.php">CONTACTS</a>
+            <?php include 'headerMenuOutput.php'; ?>
         </nav>
     </header>
     <main class="ext-main-wrapper">
-
+        <form class="uni-form" method="get">
+            <h1>Merge arrays</h1>
+            <h2>Input numbers separated with spaces</h2>
+            <?php include 'extArrayMerge/arrayMerge.php'; ?>
+            <input type="text" autocomplete="off" name="mrg_arr1" placeholder="1st array" pattern="^([0-9] ?)*[0-9]$">
+            <input type="text" autocomplete="off" name="mrg_arr2" placeholder="2nd array" pattern="^([0-9] ?)*[0-9]$">
+            <input type="submit" name="" value="Merge">
+        </form>
     </main>
     <footer class="uni-footer">
         <a href="ext.php">&copy PyEX Digital Assets, Ltd. 2020 - Seychelles</a>

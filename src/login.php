@@ -12,18 +12,16 @@
     <header class="uni-header">
         <h1><a href="index.php">PyramidEX</a></h1>
         <nav class="uni-header-grid">
-            <a href="trading.php">TRADE</a>
-            <a href="wallet.php">WALLET</a>
-            <a href="profile.php">PROFILE</a>
-            <a href="contacts.php">CONTACTS</a>
+            <?php include 'headerMenuOutput.php'; ?>
         </nav>
     </header>
     <main class="li-main-wrapper">
-        <form class="uni-form" action="profile.php">
+        <form class="uni-form" method="get" action="index.php">
             <h1>Log In to PyEX</h1>
             <input type="email" name="" placeholder="E-Mail">
             <input type="password" name="" placeholder="Password">
-            <input type="submit" name="" value="Log In">
+            <input type="hidden" name="tab" value="PROFILE">
+            <input type="submit" value="Log In">
         </form>
     </main>
     <footer class="uni-footer">
