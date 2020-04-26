@@ -25,6 +25,13 @@
             <input type="text" autocomplete="off" name="mrg_arr2" placeholder="2nd array" pattern="^([0-9] ?)*[0-9]$">
             <input type="submit" name="" value="Merge">
         </form>
+        <form class="uni-form" method="get">
+            <h1>Get file tree</h1>
+            <h2>Input path</h2>
+            <?php include 'extFileTree/fileTree.php'; ?>
+            <input type="text" autocomplete="off" name="ftree_path" placeholder="Path" pattern="\.[^\.]*">
+            <input type="submit" name="" value="Get">
+        </form>
     </main>
     <footer class="uni-footer">
         <a href="ext.php">&copy PyEX Digital Assets, Ltd. 2020 - Seychelles</a>
