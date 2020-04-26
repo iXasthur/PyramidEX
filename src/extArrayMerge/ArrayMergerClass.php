@@ -5,6 +5,12 @@
         private array $mergedArray = [];
         private array $mergedEvenArray = [];
 
+        public function __construct($arr1, $arr2)
+        {
+            $this->mergedArray = $this->createArrayConcatenation($arr1, $arr2);
+            $this->mergedEvenArray = $this->createEvenArray($this->mergedArray);
+        }
+
         private function createArrayConcatenation($arr1, $arr2): array
         {
             $buffLength = count($arr1) + count($arr2);
@@ -31,11 +37,5 @@
         public function getMergedEvenArray(): array
         {
             return $this->mergedEvenArray;
-        }
-
-        public function __construct($arr1, $arr2)
-        {
-            $this->mergedArray = $this->createArrayConcatenation($arr1, $arr2);
-            $this->mergedEvenArray = $this->createEvenArray($this->mergedArray);
         }
     }
