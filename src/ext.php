@@ -32,11 +32,6 @@
             <input type="text" autocomplete="off" name="ftree_path" placeholder="Path" pattern="\.[^\.]*">
             <input type="submit" name="" value="Get">
         </form>
-        <form class="uni-form" method="get">
-            <h1>Text shortener</h1>
-            <input type="text" autocomplete="off" name="tshrt_text" placeholder="Text">
-            <input type="submit" name="" value="Shorten">
-        </form>
     </main>
     <footer class="uni-footer">
         <a href="ext.php">&copy PyEX Digital Assets, Ltd. 2020 - Seychelles</a>
