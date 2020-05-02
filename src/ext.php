@@ -32,6 +32,13 @@
             <input type="text" autocomplete="off" name="ftree_path" placeholder="Path" pattern="\.[^\.]*">
             <input type="submit" name="" value="Get">
         </form>
+        <form class="uni-form" method="get">
+            <h1>Text shortener</h1>
+            <h2>Words with more than 6 characters will be shortened</h2>
+            <?php include 'extTextShortener/textShortener.php'; ?>
+            <input type="text" autocomplete="off" name="tshrt_text" placeholder="Text">
+            <input type="submit" name="" value="Shorten">
+        </form>
     </main>
     <footer class="uni-footer">
         <a href="ext.php">&copy PyEX Digital Assets, Ltd. 2020 - Seychelles</a>
