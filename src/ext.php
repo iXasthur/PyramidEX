@@ -39,6 +39,13 @@
             <input type="text" autocomplete="off" name="tshrt_text" placeholder="Text">
             <input type="submit" name="" value="Shorten">
         </form>
+        <form class="uni-form" method="get">
+            <h1>Get SQL data base structure</h1>
+            <h2>Input data base name</h2>
+
+            <input type="text" autocomplete="off" name="sqlstruct_name" placeholder="Text">
+            <input type="submit" name="" value="Get">
+        </form>
     </main>
     <footer class="uni-footer">
         <a href="ext.php">&copy PyEX Digital Assets, Ltd. 2020 - Seychelles</a>
