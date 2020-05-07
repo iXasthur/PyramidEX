@@ -39,11 +39,13 @@
             <input type="text" autocomplete="off" name="tshrt_text" placeholder="Text">
             <input type="submit" name="" value="Shorten">
         </form>
-        <form class="uni-form" method="get">
-            <h1>Get SQL data base structure</h1>
-            <h2>Input data base name</h2>
+        <form class="uni-form" method="post">
+            <h1>Get SQL database structure</h1>
+            <h2>Input database name, login and password</h2>
 
-            <input type="text" autocomplete="off" name="sqlstruct_name" placeholder="Text">
+            <input type="text" autocomplete="off" name="sqlstruct_name" placeholder="Database name">
+            <input type="text" autocomplete="off" name="sqlstruct_login" placeholder="Login">
+            <input type="text" autocomplete="off" name="sqlstruct_password" placeholder="Password">
             <input type="submit" name="" value="Get">
         </form>
     </main>
