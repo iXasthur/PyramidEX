@@ -40,8 +40,8 @@
             </div>
             <div class="m-markets-coin-grid">
                 <img src="../img/IOTA.png" alt="IOTA">
-                <p class="uni-coin-sname">IOTA</p>
-                <p class="uni-coin-fname">MIOTA</p>
+                <p class="uni-coin-sname">MIOTA</p>
+                <p class="uni-coin-fname">IOTA</p>
                 <p>+4%</p>
                 <p>7$</p>
             </div>
