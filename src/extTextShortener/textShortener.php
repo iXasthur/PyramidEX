@@ -1,6 +1,6 @@
 <?php
 
-    if (isset($_GET['tshrt_text'])) {
+    if (isset($_GET['tshrt_text']) && strlen($_GET['tshrt_text']) > 0) {
         include 'TextShortenerClass.php';
 
         $text = $_GET['tshrt_text'];
