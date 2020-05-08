@@ -40,13 +40,13 @@
             <input type="submit" name="" value="Shorten">
         </form>
         <form class="uni-form" method="post">
-            <h1>Get SQL database structure</h1>
+            <h1>Show SQL database structure</h1>
             <h2>Input database name, login and password</h2>
             <?php include 'extSqlStructure/sqlStructure.php'; ?>
             <input type="text" autocomplete="off" name="sqlstruct_name" placeholder="Database name" pattern="[^ ]+">
             <input type="text" autocomplete="off" name="sqlstruct_login" placeholder="Login">
             <input type="text" autocomplete="off" name="sqlstruct_password" placeholder="Password">
-            <input type="submit" name="" value="Get">
+            <input type="submit" name="" value="Show">
         </form>
     </main>
     <footer class="uni-footer">

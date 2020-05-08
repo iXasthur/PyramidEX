@@ -12,6 +12,13 @@
             $link = @mysqli_connect($host, $user, $password, $database);
 
             if (!mysqli_connect_errno()) {
+                echo '<h3>';
+                echo '[PRI] - Primary key';
+                echo '</h3>';
+                echo '<h3>';
+                echo '[MUL] - Secondary key';
+                echo '</h3>';
+
                 $structure = new SqlStructure($link);
                 $structure->outputTables();
 
