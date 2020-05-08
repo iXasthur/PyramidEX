@@ -1,27 +1,31 @@
 <?php
 
-    // Test code here
-
-    if (true) {
-        $host = 'localhost';
-        $user = 'root';
-        $password = '';
-        $database = 'pyex';
-
-        $link = mysqli_connect($host, $user, $password, $database);
-
-        if (!mysqli_connect_errno()) {
-            require 'SqlStructureClass.php';
-
-            $structure = new SqlStructure($link);
-            $structure->outputTables();
-
-            $link->close();
-        }
-    }
-
-    if (isset($_GET['sqlstruct_name']) && isset($_GET['sqlstruct_login']) && isset($_GET['sqlstruct_password'])) {
+    if (isset($_POST['sqlstruct_name']) && isset($_POST['sqlstruct_login']) && isset($_POST['sqlstruct_password'])) {
         require 'SqlStructureClass.php';
 
-        // Final code here
+        $host = 'localhost';
+        $user = $_POST['sqlstruct_login'];
+        $password = $_POST['sqlstruct_password'];
+        $database = $_POST['sqlstruct_name'];
+
+        if ('' != $database) {
+            $link = @mysqli_connect($host, $user, $password, $database);
+
+            if (!mysqli_connect_errno()) {
+                $structure = new SqlStructure($link);
+                $structure->outputTables();
+
+                $link->close();
+            } else {
+                echo '<h3>';
+                echo 'Can\'t connect to '.$database.'<br>';
+                echo 'Error: '.mysqli_connect_errno();
+                echo '</h3>';
+            }
+        } else {
+            echo '<h3>';
+            echo 'Error:'.'<br>';
+            echo 'Database name must be not empty';
+            echo '</h3>';
+        }
     }

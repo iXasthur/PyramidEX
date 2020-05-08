@@ -71,7 +71,7 @@ class SqlStructure
     public function outputTables()
     {
         foreach ($this->tableNames as $tableName) {
-            echo '<table style="font-size: 20px; border-spacing: 20px; text-align: left">';
+            echo '<table style="font-size: 17px; border-spacing: 20px; text-align: left">';
             echo '<tr>';
             echo $tableName;
             echo '</tr>';
