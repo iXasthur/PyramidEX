@@ -42,8 +42,8 @@
         <form class="uni-form" method="post">
             <h1>Get SQL database structure</h1>
             <h2>Input database name, login and password</h2>
-
-            <input type="text" autocomplete="off" name="sqlstruct_name" placeholder="Database name">
+            <?php include 'extSqlStructure/sqlStructure.php'; ?>
+            <input type="text" autocomplete="off" name="sqlstruct_name" placeholder="Database name" pattern="[^ ]+">
             <input type="text" autocomplete="off" name="sqlstruct_login" placeholder="Login">
             <input type="text" autocomplete="off" name="sqlstruct_password" placeholder="Password">
             <input type="submit" name="" value="Get">
