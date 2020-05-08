@@ -1,5 +1,6 @@
 <?php
     session_start();
+    $link = @mysqli_connect('localhost', 'root', '', 'pyex');
     include 'signupHandle.php';
 ?>
 <!DOCTYPE html>

@@ -1,7 +1,7 @@
 <?php
     session_start();
-//    header('Location: index.php?tab=PROFILE');
-//    exit();
+    $link = @mysqli_connect('localhost', 'root', '', 'pyex');
+    include 'loginHandle.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -23,6 +23,11 @@
     <main class="li-main-wrapper">
         <form class="uni-form" method="post">
             <h1>Log In to PyEX</h1>
+            <?php
+            if (isset($_POST['login_error'])) {
+                echo '<h2>'.$_POST['login_error'].'</h2>';
+            }
+            ?>
             <input type="email" name="email" placeholder="E-Mail" required="required">
             <input type="password" name="password" placeholder="Password" required="required">
             <input type="submit" value="Log In">
