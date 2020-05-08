@@ -3,8 +3,6 @@
         <h2>Profile</h2>
         <p>Nickname: yournickname</p>
         <p>E-Mail: youremain</p>
-        <p>Country: yourcountry</p>
-        <p>City: yourcity</p>
     </section>
     <section class="p-info">
         <h2>Trading fees</h2>

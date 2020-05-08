@@ -1,3 +1,8 @@
+<?php
+    session_start();
+//    header('Location: index.php?tab=PROFILE');
+//    exit();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,11 +21,10 @@
         </nav>
     </header>
     <main class="li-main-wrapper">
-        <form class="uni-form" method="get" action="index.php">
+        <form class="uni-form" method="post">
             <h1>Log In to PyEX</h1>
-            <input type="email" name="" placeholder="E-Mail">
-            <input type="password" name="" placeholder="Password">
-            <input type="hidden" name="tab" value="PROFILE">
+            <input type="email" name="email" placeholder="E-Mail" required="required">
+            <input type="password" name="password" placeholder="Password" required="required">
             <input type="submit" value="Log In">
         </form>
     </main>
