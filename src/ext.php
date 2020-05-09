@@ -1,7 +1,3 @@
-<?php
-    session_start();
-    $link = @mysqli_connect('localhost', 'root', '', 'pyex');
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
