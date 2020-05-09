@@ -18,8 +18,8 @@
             if (!userExists($link, $email)) {
                 $passwordHash = password_hash($password, PASSWORD_ARGON2I);
 
-                $sql = 'INSERT INTO user (id, nickname, email, password_hash, seller_fee, buyer_fee, kyc_status) ';
-                $sql = $sql.'VALUES (NULL, \''.$nickname.'\', \''.$email.'\', \''.$passwordHash.'\', \'0.05\', \'0.05\', \'0\')';
+                $sql = 'INSERT INTO user (id, nickname, email, password_hash, seller_fee, buyer_fee, kyc_status, receive_broadcast) ';
+                $sql = $sql.'VALUES (NULL, \''.$nickname.'\', \''.$email.'\', \''.$passwordHash.'\', \'0.05\', \'0.05\', \'0\', \'1\')';
 
                 if (mysqli_query($link, $sql)) {
                     $_SESSION['email'] = $_POST['email'];
