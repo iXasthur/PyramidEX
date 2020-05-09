@@ -9,13 +9,15 @@
                 foreach ($result as $user) {
                     $email = $user['email'];
                     $nickname = $user['nickname'];
+                    $headers = 'From: '.$email."\r\n".'MIME-Version: 1.0'."\r\n".'Content-type: text/html; charset=utf-8';
 
-                    if (mail($email, $_POST['emailbroadcast_subject'], $_POST['emailbroadcast_text'])) {
-                        echo 'Successfully broadcasted';
-                    } else {
-                        echo 'Unable to broadcast now';
-                    }
+                    $subject = '=?utf-8?B?'.base64_encode($_POST['emailbroadcast_subject']).'?=';
+
+                    mail($email, $subject, $_POST['emailbroadcast_text']);
                 }
             }
         }
+
+        header('Location: ext.php');
+        exit();
     }
