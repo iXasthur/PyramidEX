@@ -9,7 +9,7 @@
         $database = $_POST['sqlstruct_name'];
 
         if ('' != $database) {
-            $link = @mysqli_connect($host, $user, $password, $database);
+            $localLink = @mysqli_connect($host, $user, $password, $database);
 
             if (!mysqli_connect_errno()) {
                 echo '<h3>';
@@ -19,10 +19,10 @@
                 echo '[MUL] - Secondary key';
                 echo '</h3>';
 
-                $structure = new SqlStructure($link);
+                $structure = new SqlStructure($localLink);
                 $structure->outputTables();
 
-                $link->close();
+                $localLink->close();
             } else {
                 echo '<h3>';
                 echo 'Can\'t connect to '.$database.'<br>';

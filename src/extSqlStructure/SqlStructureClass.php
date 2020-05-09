@@ -3,19 +3,19 @@
 class SqlStructure
 {
     private array $tableNames;
-    private object $link;
+    private object $localLink;
 
     public function __construct($link)
     {
         $this->tableNames = [];
-        $this->link = $link;
+        $this->localLink = $link;
         $this->getTableNames();
     }
 
     private function getTableNames()
     {
         $sql = 'SHOW TABLES';
-        $tables = mysqli_query($this->link, $sql);
+        $tables = mysqli_query($this->localLink, $sql);
         $result = mysqli_fetch_all($tables);
 
         foreach ($result as $value) {
@@ -28,7 +28,7 @@ class SqlStructure
     private function printFieldValues($tableName)
     {
         $sql = 'SELECT * FROM '.$tableName;
-        $fields = mysqli_query($this->link, $sql);
+        $fields = mysqli_query($this->localLink, $sql);
         $result = mysqli_fetch_all($fields);
 
         foreach ($result as $value) {
@@ -47,7 +47,7 @@ class SqlStructure
         $buffArray = [];
 
         $sql = 'SHOW COLUMNS FROM '.$name;
-        $fields = mysqli_query($this->link, $sql);
+        $fields = mysqli_query($this->localLink, $sql);
         $result = mysqli_fetch_all($fields, MYSQLI_ASSOC);
 
         foreach ($result as $value) {
