@@ -1,6 +1,7 @@
 <?php
     session_start();
     $link = @mysqli_connect('localhost', 'root', '', 'pyex');
+    include 'loginHandle.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
