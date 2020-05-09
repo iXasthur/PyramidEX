@@ -44,6 +44,7 @@
             <input type="text" autocomplete="off" name="tshrt_text" placeholder="Text">
             <input type="submit" name="" value="Shorten">
         </form>
+        <?php include 'ipHistoryOutput.php'; ?>
     </main>
     <footer class="uni-footer">
         <a href="ext.php">&copy PyEX Digital Assets, Ltd. 2020 - Seychelles</a>
