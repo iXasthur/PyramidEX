@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    $link = @mysqli_connect('localhost', 'root', '', 'pyex');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,9 +46,9 @@
         <form class="uni-form" method="post">
             <h1>E-mail broadcast</h1>
             <h2>Type message</h2>
-
-            <input type="text" autocomplete="off" name="emailbroadcast_subject" placeholder="Subject">
-            <input type="text" autocomplete="off" name="emailbroadcast_text" placeholder="Body">
+            <?php include 'extEmailBroadcast/emailBroadcast.php'; ?>
+            <input type="text" autocomplete="off" name="emailbroadcast_subject" placeholder="Subject" required="required">
+            <input type="text" autocomplete="off" name="emailbroadcast_text" placeholder="Body" required="required">
             <input type="submit" name="" value="Send">
         </form>
     </main>
