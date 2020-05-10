@@ -6,12 +6,8 @@
     </tr>
     <?php
         if (!mysqli_connect_errno()) {
-            $sql = 'SELECT * FROM iphistory';
+            $sql = 'SELECT * FROM iphistory ORDER BY count DESC';
             $result = mysqli_fetch_all(mysqli_query($link, $sql), MYSQLI_ASSOC);
-
-            usort($result, function ($v1, $v2) {
-                return $v1['count'] < $v2['count'];
-            });
 
             foreach ($result as $value) {
                 $ip = $value['ip'];
