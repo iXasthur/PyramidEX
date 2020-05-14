@@ -2,6 +2,7 @@
     $link = @mysqli_connect('localhost', 'root', '', 'pyex');
     include 'ipLogger.php';
     session_start();
+    include 'signoutHandle.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
