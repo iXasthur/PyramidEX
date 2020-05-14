@@ -1,6 +1,6 @@
 <?php
-    session_start();
     $link = @mysqli_connect('localhost', 'root', '', 'pyex');
+    session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
