@@ -1,5 +1,6 @@
 <div class="w-main-wrapper">
     <section class="w-info">
+        <h2>WALLET PREVIEW</h2>
         <h2>OVERALL BALANCE: 110500$ (11.05 BTC)</h2>
     </section>
     <section class="w-balance-grid">

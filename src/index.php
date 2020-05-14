@@ -1,6 +1,7 @@
 <?php
     $link = @mysqli_connect('localhost', 'root', '', 'pyex');
     session_start();
+    include 'signoutHandle.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
