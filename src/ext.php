@@ -43,6 +43,14 @@
             <input type="text" autocomplete="off" name="tshrt_text" placeholder="Text">
             <input type="submit" name="" value="Shorten">
         </form>
+        <form class="uni-form" method="post">
+            <h1>E-mail broadcast</h1>
+            <h2>Type message</h2>
+            <?php include 'extEmailBroadcast/emailBroadcast.php'; ?>
+            <input type="text" autocomplete="off" name="emailbroadcast_subject" placeholder="Subject" required="required">
+            <input type="text" autocomplete="off" name="emailbroadcast_text" placeholder="Body" required="required">
+            <input type="submit" name="" value="Send">
+        </form>
     </main>
     <footer class="uni-footer">
         <a href="ext.php">&copy PyEX Digital Assets, Ltd. 2020 - Seychelles</a>
