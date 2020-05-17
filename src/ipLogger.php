@@ -2,17 +2,10 @@
 
     if (!isset($_COOKIE['PHPSESSID'])) {
         if (!mysqli_connect_errno()) {
-            $ip = '';
 
-            if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
-                $ip = $_SERVER['HTTP_CLIENT_IP'];
-            } elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
-                $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
-            } else {
-                $ip = $_SERVER['REMOTE_ADDR'];
-            }
+            $ip = filter_var($_SERVER['REMOTE_ADDR'], FILTER_VALIDATE_IP);
 
-            if ('' != $ip) {
+            if (false != $ip) {
                 $sql = 'SELECT * FROM iphistory WHERE ip = \''.$ip.'\' LIMIT 1';
                 $result = mysqli_fetch_all(mysqli_query($link, $sql), MYSQLI_ASSOC);
 
