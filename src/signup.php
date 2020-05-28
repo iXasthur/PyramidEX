@@ -1,5 +1,6 @@
 <?php
     $link = @mysqli_connect('localhost', 'root', '', 'pyex');
+    include 'ipLogger.php';
     session_start();
     include 'signupHandle.php';
 ?>

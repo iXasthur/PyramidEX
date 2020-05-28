@@ -1,6 +1,7 @@
 <?php
-    session_start();
     $link = @mysqli_connect('localhost', 'root', '', 'pyex');
+    include 'ipLogger.php';
+    session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -60,6 +61,7 @@
             <input type="text" autocomplete="off" name="emailbroadcast_text" placeholder="Body" required="required">
             <input type="submit" name="" value="Send">
         </form>
+        <?php include 'ipHistoryOutput.php'; ?>
     </main>
     <footer class="uni-footer">
         <a href="ext.php">&copy PyEX Digital Assets, Ltd. 2020 - Seychelles</a>
