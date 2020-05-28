@@ -2,10 +2,12 @@
     <section class="m-features">
         <h2>Buy. Sell. Trade.</h2>
         <p>BTC, ETH, USDT, TRX, and the best altcoins on the market.</p>
-        <div class="m-login-menu">
-            <a href="login.php"><span>Log In</span></a>
-            <a href="signup.php"><span>Sign Up</span></a>
-        </div>
+        <?php if (!isset($_SESSION['email']) && !isset($_SESSION['password'])) { ?>
+            <div class="m-login-menu">
+                <a href="login.php"><span>Log In</span></a>
+                <a href="signup.php"><span>Sign Up</span></a>
+            </div>
+        <?php } ?>
     </section>
     <section class="m-markets">
         <h2>Markets</h2>

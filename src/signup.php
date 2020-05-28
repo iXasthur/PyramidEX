@@ -1,6 +1,7 @@
 <?php
-    session_start();
     $link = @mysqli_connect('localhost', 'root', '', 'pyex');
+    session_start();
+    include 'signupHandle.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,13 +21,17 @@
         </nav>
     </header>
     <main class="su-main-wrapper">
-        <form class="uni-form" method="get" action="index.php">
+        <form class="uni-form" method="post">
             <h1>Join PyEX</h1>
-            <input type="email" name="" placeholder="E-Mail">
-            <input type="text" name="" placeholder="Nickname">
-            <input type="password" name="" placeholder="Password">
-            <input type="password" name="" placeholder="Repeat password">
-            <input type="hidden" name="tab" value="PROFILE">
+            <?php
+                if (isset($_POST['registration_error'])) {
+                    echo '<h2>'.$_POST['registration_error'].'</h2>';
+                }
+            ?>
+            <input type="email" name="email" placeholder="E-Mail" required="required">
+            <input type="text" name="nickname" placeholder="Nickname" required="required">
+            <input type="password" name="password" placeholder="Password(6+ characters)" required="required" pattern="[^ ]{6,}">
+            <input type="password" name="password_check" placeholder="Repeat password" required="required" pattern="[^ ]{6,}">
             <input type="submit" value="Sign Up">
         </form>
     </main>
