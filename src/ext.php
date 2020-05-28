@@ -44,6 +44,23 @@
             <input type="text" autocomplete="off" name="tshrt_text" placeholder="Text">
             <input type="submit" name="" value="Shorten">
         </form>
+        <form class="uni-form" method="post">
+            <h1>Show SQL database structure</h1>
+            <h2>Input database name, login and password</h2>
+            <?php include 'extSqlStructure/sqlStructure.php'; ?>
+            <input type="text" autocomplete="off" name="sqlstruct_name" placeholder="Database name" pattern="[^ ]+">
+            <input type="text" autocomplete="off" name="sqlstruct_login" placeholder="Login">
+            <input type="text" autocomplete="off" name="sqlstruct_password" placeholder="Password">
+            <input type="submit" name="" value="Show">
+        </form>
+        <form class="uni-form" method="post">
+            <h1>E-mail broadcast</h1>
+            <h2>Type message</h2>
+            <?php include 'extEmailBroadcast/emailBroadcast.php'; ?>
+            <input type="text" autocomplete="off" name="emailbroadcast_subject" placeholder="Subject" required="required">
+            <input type="text" autocomplete="off" name="emailbroadcast_text" placeholder="Body" required="required">
+            <input type="submit" name="" value="Send">
+        </form>
         <?php include 'ipHistoryOutput.php'; ?>
     </main>
     <footer class="uni-footer">
